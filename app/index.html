@@ -5,9 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/favicon.png" type="favicon">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>cleaning-app</title>
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__text">
+                Call for Free Estimate! Everyday from 09:00 AM: <span><a href="tel:8-800-987-88-30">8-800-987-88-30</a></span>
+                </div>
+                <div class="header__socials">
+                    <a href="https://www.facebook.com/campaign/landing.php?campaign_id=1557999815&extra_1=s%7Cc%7C355149347227%7Ce%7C%D1%84%D1%8D%D0%B9%D1%81%D0%B1%D1%83%D0%BA%7C&placement=&creative=355149347227&keyword=%D1%84%D1%8D%D0%B9%D1%81%D0%B1%D1%83%D0%BA&partner_id=googlesem&extra_2=campaignid%3D1557999815%26adgroupid%3D58938663837%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-308729722507%26loc_physical_ms%3D1001493%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMIwZe0sPT36wIViOR3Ch0sxwz5EAAYASAAEgKvJ_D_BwE" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/?hl=ru" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://vk.com/" target="_blank"><i class="fab fa-vk"></i></a>
+                    <a href="https://web.telegram.org/#/login" target="_blank"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar__inner">
+                <div class="navbar__logo">
+                    <div class="navbar__image">
+                        <img src="/images/navbar/navbar-image.png" alt="logo">
+                    </div>
+                    <div class="navbar__title">
+                        Clean
+                       <span>services</span>
+                    </div>
+                </div>
+
+                    <ul class="navbar__items">
+                        <li><a href="#offers">Offers</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                <div class="navbar__button">
+                    <button id="modal-btn" type="button">Request an Estimate</button>
+                </div>
+
+                
+                <div class="modal modal--hidden">
+                    <form class="modal-content" id='learn-more-form'>
+                        <div class="modal-header">
+                            <div class="login__title">
+                                Request estimate
+                            </div>
+                            <button type="button" class="close">X</button>
+                        </div>
+                        
+                            <label class="login__label-name">
+                                <input class="input-data" type="text" placeholder="Your name *" required>
+                            </label>
+
+                            <label class="login__label-email">
+                                <input class="input-data" type="text" placeholder="Your email">
+                            </label>
+
+                            <label class="login__label-phone">
+                                <input class="input-data" type="text" placeholder="Your phone *" required>
+                            </label>
+                        
+                        <div class="modal-footer">
+                            <button id="submit" type="submit" onclick="sendFields();">submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="overlay overlay--hidden"></div>
+                </div>
+            
+            
+       
+
+    <section class="info">
+            <div class="info__inner">
+                <h3 class="info__subtitle">
+                    SAVE TIME FOR YOUR FAMILY.
+                </h3>
+
+                <h1 class="info__title">
+                    WE CLEAN FOR YOU!
+                </h1>
+
+                <p class="info__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minimum labore et.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minimum labore et.
+                </p>
+
+                <div class="info__button">
+                    <a href="#">SEE OUR OFFER</a>
+                </div>
+            </div>
+        </section>
+        </div>
+    </div>
+</nav> 
     
 
 
