@@ -1,10 +1,11 @@
 {
-  "name": "start-gulp",
+  "name": "cleaning-app",
   "version": "1.0.0",
   "description": "The usual start",
   "main": "index.js",
   "scripts": {
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
