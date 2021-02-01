@@ -1,0 +1,35 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    // height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+    
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    // color: $text;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
