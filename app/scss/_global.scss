@@ -9,8 +9,9 @@ html {
 }
 
 body {
-    // height: 100%;
     font-family: 'Josefin Sans', sans-serif;
+    height: 100%;
+    user-select: none;
 }
 
     
@@ -18,7 +19,7 @@ body {
 a {
     display: inline-block;
     text-decoration: none;
-    // color: $text;
+    color: #008aff;
 }
 
 ul, li {
@@ -29,7 +30,12 @@ ul, li {
 
 
 .container {
-    max-width: 940px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
 }
