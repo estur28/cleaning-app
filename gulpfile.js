@@ -14,6 +14,9 @@ const imagemin = require('gulp-imagemin');
 
 const del = require('del');
 
+const ghPages = require('gh-pages');
+const path = require('path');
+
 
 
 function cleanDist() {
@@ -73,13 +76,17 @@ function styles() {
 
 function build() {
     return src([
-        'app/css/style.css',
-        'app/fonts/**/*',
+        'app/css/style.min.css',
         'app/js/main.min.js',
         'app/*.html'
     ], { base: 'app'})  
     .pipe(dest('dist'))
 }
+
+function deploy(cb) {
+    ghPages.publish(path.join(process.cwd(), './dist'), cb);
+  }
+  exports.deploy = deploy;
 
 function watching() {
   watch(['app/scss/**/*.scss'], styles);
